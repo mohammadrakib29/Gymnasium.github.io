@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?d5fa644b3308982c3e826669139118e9") format("truetype"),
+url("./flaticon.woff?d5fa644b3308982c3e826669139118e9") format("woff"),
+url("./flaticon.woff2?d5fa644b3308982c3e826669139118e9") format("woff2"),
+url("./flaticon.eot?d5fa644b3308982c3e826669139118e9#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d5fa644b3308982c3e826669139118e9#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "exercise": "\f101",
+    "exercise-1": "\f102",
+    "weightlifting": "\f103",
+    "pull-up": "\f104",
+    "boy-laying-down-with-legs-up": "\f105",
+    "buddhist-yoga-pose": "\f106",
+    "man-jumping-rope": "\f107",
+    "bicycle": "\f108",
+    "man-boxing": "\f109",
+    "exercise-2": "\f10a",
+);
+
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-exercise-1:before {
+    content: map-get($flaticon-map, "exercise-1");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-pull-up:before {
+    content: map-get($flaticon-map, "pull-up");
+}
+.flaticon-boy-laying-down-with-legs-up:before {
+    content: map-get($flaticon-map, "boy-laying-down-with-legs-up");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-man-jumping-rope:before {
+    content: map-get($flaticon-map, "man-jumping-rope");
+}
+.flaticon-bicycle:before {
+    content: map-get($flaticon-map, "bicycle");
+}
+.flaticon-man-boxing:before {
+    content: map-get($flaticon-map, "man-boxing");
+}
+.flaticon-exercise-2:before {
+    content: map-get($flaticon-map, "exercise-2");
+}
